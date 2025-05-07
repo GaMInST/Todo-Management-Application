@@ -69,6 +69,7 @@ dotnet run
 ```
 Open your browser and navigate to:
 👉 https://localhost:5001 or http://localhost:5000
+or `https://localhost:7272` (or the port shown in your browser when running from Visual Studio)
 
 ### Features Implemented
 ✅ Basic CRUD for Todos

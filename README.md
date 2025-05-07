@@ -58,8 +58,8 @@ TodoApp/
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/your-username/TodoApp.git
-cd TodoApp
+git clone https://github.com/GaMInST/Todo-Management-Application.git
+cd Todo-Management-Application
 ```
 ### Restore & Run
 ```bash

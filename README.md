@@ -128,6 +128,6 @@ Use the above routes (e.g., `GET https://localhost:7272/api/TodosApi`) to test t
  - SQLite is used for quick setup; not ideal for production
  - No client-side interactivity or JS enhancements
    
-### 📌 Notes
+### 📌 Final Notes
 This project was built in under 4 hours as part of a coding challenge.
 Focus was placed on code clarity, simplicity, and functionality — not completeness or complexity.

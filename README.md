@@ -14,38 +14,32 @@ This project is focused on clean structure, basic CRUD operations, and demonstra
 
 ---
 
-## 📁 Project Structure
-TodoApp/
-├── Controllers/
-│ ├── HomeController.cs
-│ └── TodosController.cs
-├── Data/
-│ └── AppDbContext.cs
-├── Migrations/
-│ ├── 20250506182855_InitialCreate.cs
-│ └── AppDbContextModelSnapshot.cs
-├── Models/
-│ ├── ErrorViewModel.cs
-│ └── Todo.cs
-├── Views/
-│ ├── Home/
-│ │ ├── Index.cshtml
-│ │ └── Privacy.cshtml
-│ ├── Shared/
-│ │ ├── _Layout.cshtml
-│ │ ├── _ValidationScriptsPartial.cshtml
-│ │ └── Error.cshtml
-│ └── Todos/
-│ ├── Index.cshtml
-│ ├── Create.cshtml
-│ ├── Edit.cshtml
-│ ├── Details.cshtml
-│ └── Delete.cshtml
-├── Program.cs
-├── TodoApp.csproj
-├── appsettings.json
-├── todo.db*
-├── README.md
+## 📁 Project Folder Structure
+
+The project is organized into key folders and files as follows:
+
+- `Controllers/`
+  - `TodosController.cs`: Handles the MVC web views for managing todos.
+  - `TodosApiController.cs`: Provides RESTful API endpoints for external integration.
+  
+- `Models/`
+  - `Todo.cs`: The Todo entity with fields like Title, Description, Status, etc.
+  - `TodoStatus.cs`, `TodoPriority.cs`: Enums for the status and priority of a task.
+
+- `Data/`
+  - `AppDbContext.cs`: Entity Framework Core context class used to interact with the database.
+
+- `Views/`
+  - `Todos/`: Contains Razor views (Create, Edit, Delete, Details, Index) for managing todos through the browser.
+
+- `wwwroot/`
+  - Static content such as CSS, JS, and Bootstrap resources.
+
+- `Program.cs`
+  - Configures services, middleware, Swagger UI, and runs the application.
+
+- `README.md`
+  - This documentation file.
 
 ---
 

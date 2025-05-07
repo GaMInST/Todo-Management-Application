@@ -82,20 +82,51 @@ or `https://localhost:7272` (or the port shown in your browser when running from
 ✅ Bootstrap UI via layout
 ✅ Enum values rendered as dropdown in forms
 
-### 🔍 Swagger API
+## 📘 API Documentation with Swagger
 
-🔍 Swagger API
-- Navigate to /swagger in development mode to view and test the API endpoints using Swagger UI.
+This project includes a Web API alongside the MVC views to allow interaction with Todo items programmatically.
 
-- You can test:
+### 🔗 Accessing Swagger
 
-- GET: /Todos
+After running the project (via Visual Studio), open your browser and go to: 
+``` https://localhost:7272/swagger```
 
-- POST: /Todos/Create
+> ⚠️ Note: Make sure the app is running in **HTTPS mode** as `https://localhost:7272`.
 
-- PUT: /Todos/Edit
+---
 
-- DELETE: /Todos/Delete
+### 📂 Available API Endpoints
+
+A separate API controller (`TodosApiController`) has been added to provide JSON-based endpoints for working with Todos. You can use Swagger UI or Postman to interact with the following endpoints:
+
+| Method | Endpoint                  | Description             |
+|--------|---------------------------|-------------------------|
+| GET    | /api/TodosApi             | Get all todos           |
+| GET    | /api/TodosApi/{id}        | Get a specific todo     |
+| POST   | /api/TodosApi             | Create a new todo       |
+| PUT    | /api/TodosApi/{id}        | Update an existing todo |
+| DELETE | /api/TodosApi/{id}        | Delete a todo           |
+
+---
+
+### 🧪 Testing the API
+
+You can test the API in two ways:
+
+#### ✅ Swagger UI
+Visit: `https://localhost:7272/swagger`  
+Try each operation directly from your browser.
+
+#### ✅ Postman
+Use the above routes (e.g., `GET https://localhost:7272/api/TodosApi`) to test the API.
+
+---
+
+### 📌 Notes
+
+- These API endpoints are **separate** from the MVC views rendered by `TodosController.cs`.
+- The API controller returns `JSON` and follows RESTful conventions.
+- This setup allows the app to support both web frontend views and external API consumers.
 
  ### Known Limitations / Challenges
  - No user authentication or authorization (for simplicity)
